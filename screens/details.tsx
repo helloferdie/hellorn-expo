@@ -10,7 +10,7 @@ type DetailsScreenProps = NativeStackScreenProps<RootStackParamList, "details">;
 export default function DetailsScreen(props: DetailsScreenProps) {
   return (
     <SafeAreaView className="flex-1 bg-white">
-      <ScrollViewFullWidth>
+      <ScrollViewFullWidth style="flex-1">
         {[...Array(10)].map((_, i) => (
           <TextInputDefault key={i} label="My first name" />
         ))}
