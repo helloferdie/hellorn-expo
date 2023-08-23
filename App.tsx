@@ -1,5 +1,12 @@
+import Realm from "realm";
+
+import { RealmProvider } from "./models/config";
 import Navigation from "./navigation/navigation";
 
 export default function App() {
-  return <Navigation />;
+  return (
+    <RealmProvider>
+      <Navigation />
+    </RealmProvider>
+  );
 }

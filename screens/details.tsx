@@ -12,12 +12,13 @@ export default function DetailsScreen(props: DetailsScreenProps) {
     <SafeAreaView className="flex-1 bg-white">
       <ScrollViewFullWidth style="flex-1">
         {[...Array(10)].map((_, i) => (
-          <TextInputDefault key={i} label="My first name" />
+          <TextInputDefault key={i} label="My first name" value="" />
         ))}
 
-        <TextInputDefault label="My first name" />
+        <TextInputDefault label="My first name" value="" />
 
         <ButtonFullWidth
+          variant="primary"
           label="Go to home"
           onPress={() => {
             props.navigation.goBack();
@@ -25,6 +26,7 @@ export default function DetailsScreen(props: DetailsScreenProps) {
         />
 
         <ButtonFullWidth
+          variant="primary"
           label="Go to home"
           onPress={() => {
             props.navigation.goBack();
@@ -33,6 +35,7 @@ export default function DetailsScreen(props: DetailsScreenProps) {
       </ScrollViewFullWidth>
       <ViewStickyFooter>
         <ButtonFullWidth
+          variant="primary"
           label="Go to home"
           onPress={() => {
             props.navigation.goBack();

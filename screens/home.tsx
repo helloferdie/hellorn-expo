@@ -49,6 +49,13 @@ export default function HomeScreen(props: HomeScreenProps) {
         }}
       />
 
+      <Button
+        title="Go article"
+        onPress={() => {
+          props.navigation.navigate("article");
+        }}
+      />
+
       <StatusBar style="auto" />
     </StyledView>
   );

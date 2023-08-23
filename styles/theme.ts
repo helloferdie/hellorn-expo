@@ -13,7 +13,7 @@
 
 const styles = {
   view: {
-    fullWidth: "w-full px-4 py-4",
+    fullWidth: "w-full px-4 pt-4 pb-4",
   },
 };
 
