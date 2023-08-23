@@ -1,5 +1,4 @@
 import { Text, TextInput, View } from "react-native";
-import { ViewFullWidth } from "./view";
 
 export function TextInputDefault(props: { label: string }) {
   return (
